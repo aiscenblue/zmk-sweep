@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
 #define DEFAULT        0
 #define CODE           1
 #define MODS           2  
@@ -25,7 +24,7 @@
                                 &rpi ESCAPE Q       &rpi_lyr CONFIG W  &rpi_lyr MODS E    &rpi_lyr CODE R           &rpi K_UNDO T                               &rpi K_REDO Y            &rpi_lyr CODE U            &rpi_lyr MODS I    &rpi_lyr CONFIG O   &rpi ESCAPE P      
                                 &rpi LCMD A         &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F             &rpi GLOBE G                                &rpi GLOBE H             &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L        &rpi LCMD SEMI
                                 &kp Z               &rpi K_CUT X       &rpi K_COPY C      &rpi K_PASTE V            &rpi CAPSLOCK B                             &kp BSPC                 &rpi RET N                 &kp M              &kp COMMA           &kp DOT      
-                                                                       &mo CONFIG         &rpi_lyr MODS TAB         &rpi_lyr CODE RET                           &kp SPACE                &rpi_lyr CODE TAB          &tap_mode
+                                                                                          &rpi_lyr MODS TAB         &rpi_lyr CODE RET                           &kp SPACE                &rpi_lyr CODE TAB
                         >;
                 };
 
@@ -34,7 +33,7 @@
                                    &kp N1        &kp N2         &kp N3          &kp N4            &kp N5                                 &kp BSLH                 &kp SLASH                &kp LPAR               &kp RPAR    &kp EQUAL  
                                    &kp N6        &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &kp EXCL                 &kp AT                   &kp LBKT               &kp RBKT    &kp SQT
                                    &trans        &trans         &trans          &trans            &trans                                 &kp HASH                 &kp DOLLAR               &kp PRCNT              &kp GRAVE   &kp MINUS
-                                                                &trans          &trans            &trans                                 &kp AMPS                 &kp ASTRK                &kp CARET
+                                                                                &trans            &trans                                 &kp AMPS                 &kp ASTRK
                         >;
                 };
 
@@ -43,16 +42,16 @@
                                    &kp F1      &kp F2           &kp F3          &kp F4          &kp F5                               &tap_dota_base   &kp C_VOLUME_DOWN          &kp UP        &kp C_VOLUME_UP    &kp ESCAPE 
                                    &kp F6      &rpi LCTRL F7    &rpi LALT F8    &rpi LSHIFT F9  &rpi LCMD F10                        &trans           &kp LEFT                   &kp DOWN      &kp RIGHT          &kp TAB
                                    &kp F11     &kp F12          &kp F13         &kp F14         &kp F15                              &kp DEL          &trans                     &trans        &trans             &kp RET
-                                                                &trans          &trans          &mo CONFIG                           &kp RET          &trans                     &trans
+                                                                                &trans          &mo CONFIG                           &kp RET          &trans
                         >;
                 };
 
                 config_layer {
                         bindings = <
-                                   &trans          &trans      &trans        &trans          &trans                               &trans       &trans       &kp PAGE_UP        &trans        &trans 
+                                   &trans          &trans      &trans        &trans          &bt BT_CLR                           &bt BT_CLR   &trans       &kp PAGE_UP        &trans        &trans 
                                    &trans          &trans      &trans        &trans          &trans                               &trans       &kp HOME     &kp PAGE_DOWN      &kp END       &trans
                                    &trans          &trans      &trans        &trans          &trans                               &trans       &trans       &trans             &trans        &trans
-                                                               &bt BT_CLR    &bt BT_PRV      &bt BT_NXT                           &bt BT_NXT   &bt BT_PRV   &bt BT_CLR
+                                                                             &bt BT_PRV      &bt BT_NXT                           &bt BT_NXT   &bt BT_PRV
                         >;
                 };
 
@@ -61,7 +60,7 @@
                                    &kp Q         &kp W          &kp E         &kp R            &rpi Y T                            &mo DOTA_BASE   &trans       &kp PAGE_UP        &trans          &trans 
                                    &kp A         &rpi LCTRL S   &rpi LALT D   &rpi LSHIFT F    &kp G                               &trans          &kp HOME     &kp PAGE_DOWN      &kp END         &trans
                                    &kp Z         &kp X          &kp C         &kp V            &kp B                               &trans          &trans       &trans             &trans          &trans
-                                                                &kp TAB       &mo DOTA_SHIFT   &kp LALT                            &trans          &trans       &trans
+                                                                              &mo DOTA_SHIFT   &kp LALT                            &trans          &trans
                         >;
                 };
 
@@ -70,7 +69,7 @@
                                    &kp N1        &kp N2         &kp N3          &kp N4            &kp N5                             &trans       &trans       &trans        &trans      &trans  
                                    &kp N6        &kp N7         &kp N8          &kp N9            &kp N0                             &trans       &trans       &trans        &trans      &trans
                                    &kp F1        &kp F2         &kp F3          &kp F4            &kp F5                             &trans       &trans       &trans        &trans      &trans
-                                                                &trans          &trans            &trans                             &trans       &trans       &trans
+                                                                                &trans            &trans                             &trans       &trans
                         >;
                 };
         };
