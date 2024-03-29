@@ -57,10 +57,10 @@
 
                 dota_base_layer {
                         bindings = <
-                                   &kp Q         &kp W          &kp E         &kp R            &rpi Y T                            &mo DOTA_BASE   &trans       &kp PAGE_UP        &trans          &trans 
+                                   &kp Q         &kp W          &kp E         &kp R            &rpi Y T                            &trans          &trans       &kp PAGE_UP        &trans          &trans 
                                    &kp A         &rpi LCTRL S   &rpi LALT D   &rpi LSHIFT F    &kp G                               &trans          &kp HOME     &kp PAGE_DOWN      &kp END         &trans
                                    &kp Z         &kp X          &kp C         &kp V            &kp B                               &trans          &trans       &trans             &trans          &trans
-                                                                              &mo DOTA_SHIFT   &kp LALT                            &trans          &trans
+                                                                              &mo DOTA_SHIFT   &kp LALT                            &mo DOTA_BASE   &trans
                         >;
                 };
 
