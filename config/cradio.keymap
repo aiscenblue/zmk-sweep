@@ -21,7 +21,7 @@
 
                 win_layer {
                         bindings = <
-                                &rpi ESCAPE Q       &rpi_lyr CONFIG W  &rpi_lyr MODS E    &rpi_lyr CODE R           &rpi K_UNDO T                               &rpi K_REDO Y            &rpi_lyr CODE U            &rpi_lyr MODS I    &rpi_lyr CONFIG O    &rpi ESCAPE P      
+                                &rpi ESCAPE Q       &kp W              &rpi_lyr MODS E    &rpi_lyr CODE R           &rpi K_UNDO T                               &rpi K_REDO Y            &rpi_lyr CODE U            &rpi_lyr MODS I    &kp O                &rpi ESCAPE P      
                                 &rpi LCMD A         &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F             &rpi GLOBE G                                &rpi GLOBE H             &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L         &rpi LCMD SEMI
                                 &kp Z               &rpi K_CUT X       &rpi K_COPY C      &rpi K_PASTE V            &rpi CAPSLOCK B                             &kp BSPC                 &rpi RET N                 &kp M              &rpi C_BRI_DN COMMA  &rpi C_BRI_UP DOT      
                                                                                           &rpi_lyr MODS TAB         &rpi_lyr CODE RET                           &kp SPACE                &rpi_lyr CODE TAB
@@ -39,10 +39,10 @@
 
                 mods_layer {
                         bindings = <
-                                   &kp F1      &kp F2           &kp F3          &kp F4          &kp F5                               &tap_dota_base   &kp C_VOLUME_DOWN          &kp UP        &kp C_VOLUME_UP    &kp ESCAPE 
-                                   &kp F6      &rpi LCTRL F7    &rpi LALT F8    &rpi LSHIFT F9  &rpi LCMD F10                        &trans           &kp LEFT                   &kp DOWN      &kp RIGHT          &kp TAB
-                                   &kp F11     &kp F12          &kp F13         &kp F14         &kp F15                              &kp DEL          &trans                     &trans        &trans             &kp RET
-                                                                                &trans          &mo CONFIG                           &kp RET          &trans
+                                   &kp F1      &kp F2           &kp F3          &kp F4          &kp F5                               &trans           &kp C_VOLUME_DOWN          &kp UP        &kp C_VOLUME_UP    &trans 
+                                   &kp F6      &rpi LCTRL F7    &rpi LALT F8    &rpi LSHIFT F9  &rpi LCMD F10                        &trans           &kp LEFT                   &kp DOWN      &kp RIGHT          &trans
+                                   &kp F11     &kp F12          &kp F13         &kp F14         &kp F15                              &kp DEL          &trans                     &trans        &trans             &trans
+                                                                                &trans          &trans                               &tap_dota_base   &trans
                         >;
                 };
 
@@ -205,5 +205,13 @@
                 };
 
         };
+
+         conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                    if-layers = <MODS CODE>;
+                    then-layer = <CONFIG>;
+                };
+            };
 
 };
