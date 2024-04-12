@@ -218,9 +218,14 @@
 
          conditional_layers {
                 compatible = "zmk,conditional-layers";
-                tri_layer {
+                high_mods_layer {
                     if-layers = <MODS CODE>;
                     then-layer = <HI_MODS>;
+                };
+
+                config_layer {
+                    if-layers = <MODS HI_MODS>;
+                    then-layer = <CONFIG>;
                 };
             };
 
