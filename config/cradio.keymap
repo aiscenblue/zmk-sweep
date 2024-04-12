@@ -25,7 +25,7 @@
                                 &rpi ESCAPE Q       &kp W                 &rpi_lyr MODS E    &rpi_lyr CODE R           &rpi K_UNDO T                               &rpi K_REDO Y            &rpi_lyr CODE U            &rpi_lyr MODS I    &kp O                &rpi ESCAPE P      
                                 &kp A               &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi GLOBE G                                &rpi GLOBE H             &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L         &kp SEMI
                                 &kp Z               &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                             &kp BSPC                 &rpi RET N                 &kp M              &rpi C_BRI_DN COMMA  &rpi C_BRI_UP DOT      
-                                                                                             &rpi LCMD TAB             &rpi_lyr CODE LSHIFT                        &rpi_lyr CODE SPACE      &rpi RCMD TAB
+                                                                                             &rpi LCMD TAB             &rpi_lyr CODE SPACE                         &rpi_lyr CODE SPACE      &rpi RCMD TAB
                         >;
                 };
 
