@@ -22,10 +22,10 @@
 
                 win_layer {
                         bindings = <
-                                &rpi ESCAPE Q       &kp W              &rpi_lyr MODS E    &rpi_lyr CODE R           &rpi K_UNDO T                               &rpi K_REDO Y            &rpi_lyr CODE U            &rpi_lyr MODS I    &kp O                &rpi ESCAPE P      
-                                &kp A               &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F             &rpi GLOBE G                                &rpi GLOBE H             &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L         &kp SEMI
-                                &kp Z               &kp X              &kp C              &kp V                     &rpi CAPSLOCK B                             &kp BSPC                 &rpi RET N                 &kp M              &rpi C_BRI_DN COMMA  &rpi C_BRI_UP DOT      
-                                                                                          &rpi LCMD TAB             &rpi_lyr CODE RET                           &rpi RSHIFT SPACE        &rpi RCMD TAB
+                                &rpi ESCAPE Q       &rpi_lyr HI_MODS W    &rpi_lyr MODS E    &rpi_lyr CODE R           &rpi K_UNDO T                               &rpi K_REDO Y            &rpi_lyr CODE U            &rpi_lyr MODS I    &rpi_lyr HI_MODS O   &rpi ESCAPE P      
+                                &kp A               &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi GLOBE G                                &rpi GLOBE H             &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L         &kp SEMI
+                                &kp Z               &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                             &kp BSPC                 &rpi RET N                 &kp M              &rpi C_BRI_DN COMMA  &rpi C_BRI_UP DOT      
+                                                                                             &rpi LCMD TAB             &rpi_lyr CODE RET                           &rpi RSHIFT SPACE        &rpi RCMD TAB
                         >;
                 };
 
@@ -52,7 +52,7 @@
                                    &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &kp PAGE_UP       &trans         &trans 
                                    &trans          &trans            &trans            &trans          &trans                               &trans          &kp HOME          &kp PAGE_DOWN     &kp END        &trans
                                    &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans         &trans
-                                                                                       &trans          &trans                               &tap_dota_base  &trans
+                                                                                       &trans          &tap_dota_base                               &trans          &trans
                         >;
                 };
 
