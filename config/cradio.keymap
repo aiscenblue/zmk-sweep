@@ -10,10 +10,11 @@
 
 #define DEFAULT        0
 #define CODE           1
-#define MODS           2  
-#define CONFIG         3
-#define DOTA_BASE      4
-#define DOTA_SHIFT     5
+#define MODS           2
+#define HI_MODS        3
+#define CONFIG         4
+#define DOTA_BASE      5
+#define DOTA_SHIFT     6
 
 / {
         keymap {
@@ -42,14 +43,23 @@
                                    &kp F1      &kp F2           &kp F3          &kp F4          &kp F5                               &trans           &kp C_VOLUME_DOWN          &kp UP        &kp C_VOLUME_UP    &trans 
                                    &kp F6      &rpi LCTRL F7    &rpi LALT F8    &rpi LSHIFT F9  &rpi LCMD F10                        &trans           &kp LEFT                   &kp DOWN      &kp RIGHT          &trans
                                    &kp F11     &kp F12          &kp F13         &kp F14         &kp F15                              &kp DEL          &trans                     &trans        &trans             &trans
-                                                                                &trans          &mo CODE                             &tap_dota_base   &trans
+                                                                                &mo HI_MODS     &mo CODE                             &kp RET          &trans
+                        >;
+                };
+
+                hi_mods_layer {
+                        bindings = <
+                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &kp PAGE_UP       &trans         &trans 
+                                   &trans          &trans            &trans            &trans          &trans                               &trans          &kp HOME          &kp PAGE_DOWN     &kp END        &trans
+                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans         &trans
+                                                                                       &trans          &trans                               &tap_dota_base  &trans
                         >;
                 };
 
                 config_layer {
                         bindings = <
-                                   &trans          &trans            &trans            &trans          &bt BT_CLR                           &bt BT_CLR      &trans            &kp PAGE_UP       &trans         &trans 
-                                   &trans          &trans            &trans            &trans          &trans                               &trans          &kp HOME          &kp PAGE_DOWN     &kp END        &trans
+                                   &trans          &trans            &trans            &trans          &bt BT_CLR                           &bt BT_CLR      &trans            &trans            &trans         &trans 
+                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans        &trans
                                    &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4                         &bt BT_SEL 4    &bt BT_SEL 3      &bt BT_SEL 2      &bt BT_SEL 1   &bt BT_SEL 0
                                                                                        &bt BT_PRV      &bt BT_NXT                           &bt BT_NXT   &bt BT_PRV
                         >;
@@ -210,7 +220,7 @@
                 compatible = "zmk,conditional-layers";
                 tri_layer {
                     if-layers = <MODS CODE>;
-                    then-layer = <CONFIG>;
+                    then-layer = <HI_MODS>;
                 };
             };
 
