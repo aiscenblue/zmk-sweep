@@ -52,7 +52,7 @@
                                    &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &kp PAGE_UP       &trans         &trans 
                                    &trans          &trans            &trans            &trans          &trans                               &trans          &kp HOME          &kp PAGE_DOWN     &kp END        &trans
                                    &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans         &trans
-                                                                                       &trans          &tap_dota_base                               &trans          &trans
+                                                                                       &trans          &tap_dota_base                       &trans          &trans
                         >;
                 };
 
