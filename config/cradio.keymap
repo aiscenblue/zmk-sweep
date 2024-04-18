@@ -33,7 +33,7 @@
                         bindings = <
                                    &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi PLUS EQUAL          &rpi UNDER MINUS         &kp LPAR               &rpi PIPE RPAR    &rpi QMARK AMPS 
                                    &rpi LSHIFT N6   &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &rpi DQT SQT             &rpi RSHIFT AT           &rpi LBRC LBKT         &rpi RBRC RBKT    &rpi RSHIFT EXCL
-                                   &trans           &trans         &trans          &trans            &trans                                 &kp HASH                 &rpi CARET DOLLAR        &rpi TILDE PRCNT       &rpi LT GRAVE     &rpi GT ASTRK
+                                   &trans           &trans         &trans          &trans            &trans                                 &rpi LT HASH             &rpi GT DOLLAR           &rpi TILDE PRCNT       &rpi  GRAVE     &rpi  CARET ASTRK
                                                                                    &trans            &trans                                 &rpi PIPE BSLH           &rpi QMARK SLASH
                         >;
                 };
