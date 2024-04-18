@@ -31,7 +31,7 @@
 
                 code_layer {
                         bindings = <
-                                   &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi PLUS EQUAL   &rpi UNDER MINUS     &kp LPAR          &rpi BSLH RPAR      &rpi SLASH AMPS 
+                                   &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi PLUS EQUAL   &rpi UNDER MINUS     &rpi BSLH LPAR    &rpi SLASH RPAR     &kp AMPS 
                                    &rpi LSHIFT N6   &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &rpi DQT SQT      &rpi QMARK AT        &rpi LBRC LBKT    &rpi RBRC RBKT      &rpi RSHIFT EXCL
                                    &trans           &trans         &trans          &trans            &trans                                 &rpi LT HASH      &rpi GT DOLLAR       &rpi PIPE PRCNT   &rpi TILDE GRAVE    &rpi CARET ASTRK
                                                                                    &trans            &trans                                 &trans            &trans
@@ -40,18 +40,18 @@
 
                 mods_layer {
                         bindings = <
-                                   &kp F1      &kp F2           &kp F3          &kp F4          &kp F5                               &trans           &kp C_VOLUME_DOWN          &kp UP        &kp C_VOLUME_UP    &trans 
-                                   &kp F6      &rpi LCTRL F7    &rpi LALT F8    &rpi LSHIFT F9  &rpi LCMD F10                        &trans           &kp LEFT                   &kp DOWN      &kp RIGHT          &trans
-                                   &kp F11     &kp F12          &kp F13         &kp F14         &kp F15                              &kp DEL          &trans                     &trans        &trans             &trans
+                                   &kp F1      &kp F2           &kp F3          &kp F4          &kp F5                               &trans           &kp C_VOLUME_DOWN          &rpi_slow PAGE_UP UP        &kp C_VOLUME_UP         &trans 
+                                   &kp F6      &rpi LCTRL F7    &rpi LALT F8    &rpi LSHIFT F9  &rpi LCMD F10                        &trans           &rpi_slow HOME LEFT        &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT     &trans
+                                   &kp F11     &kp F12          &kp F13         &kp F14         &kp F15                              &kp DEL          &trans                     &trans                      &trans                  &trans
                                                                                 &mo CONFIG      &rpi_lyr CODE RET                    &kp RET          &mo CONFIG
                         >;
                 };
 
                 hi_mods_layer {
                         bindings = <
-                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &kp PAGE_UP       &trans         &trans 
-                                   &trans          &trans            &trans            &trans          &trans                               &trans          &kp HOME          &kp PAGE_DOWN     &kp END        &trans
-                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans         &trans
+                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans       &trans         &trans 
+                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans       &trans         &trans
+                                   &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans       &trans         &trans
                                                                                        &trans          &trans                               &trans  &trans
                         >;
                 };
@@ -95,12 +95,12 @@
                     bindings = <&kp>, <&kp>;
                 };
 
-                rpi_fast: rpi_fast {
+                rpi_slow: rpi_slow {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
-                    tapping-term-ms = <150>;
-                    quick-tap-ms = <50>;
+                    tapping-term-ms = <350>;
+                    quick-tap-ms = <100>;
                     require-prior-idle-ms = <150>;
                     bindings = <&kp>, <&kp>;
                 };
