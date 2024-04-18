@@ -22,7 +22,7 @@
 
                 win_layer {
                         bindings = <
-                                &rpi ESCAPE Q       &rpi_lyr CODE W       &rpi_lyr MODS E    &kp R                     &tog_mod_kp DOTA_BASE T                     &kp Y                    &kp U                      &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
+                                &rpi ESCAPE Q       &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &tog_mod_kp DOTA_BASE T                     &kp Y                    &kp U                      &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
                                 &rpi LSHIFT A       &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
                                 &rpi GLOBE Z        &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                             &kp BSPC                 &rpi RET N                 &rpi C_BRI_DN M    &rpi C_BRI_UP COMMA  &rpi GLOBE DOT      
                                                                                              &rpi LCMD TAB             &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi RCMD TAB
@@ -31,7 +31,7 @@
 
                 code_layer {
                         bindings = <
-                                   &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi PLUS EQUAL   &rpi MINUS UNDER     &rpi BSLH LPAR    &rpi SLASH RPAR     &kp AMPS 
+                                   &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi PLUS EQUAL   &rpi MINUS UNDER     &rpi SLASH LPAR   &rpi BSLH RPAR      &kp AMPS 
                                    &rpi LSHIFT N6   &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &rpi SQT DQT      &rpi QMARK AT        &rpi LBKT LBRC    &rpi RBKT RBRC      &rpi RSHIFT EXCL
                                    &trans           &trans         &trans          &trans            &trans                                 &rpi LT HASH      &rpi GT DOLLAR       &rpi PIPE PRCNT   &rpi TILDE GRAVE    &rpi CARET ASTRK
                                                                                    &trans            &trans                                 &trans            &trans
@@ -120,6 +120,16 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
+                    quick-tap-ms = <0>;
+                    require-prior-idle-ms = <0>;
+                    bindings = <&mo>, <&kp>;
+                };
+
+                rpi_lyr_slow: rpi_lyr_slow {
+                    compatible = "zmk,behavior-hold-tap";
+                    #binding-cells = <2>;
+                    flavor = "tap-preferred";
+                    tapping-term-ms = <400>;
                     quick-tap-ms = <0>;
                     require-prior-idle-ms = <0>;
                     bindings = <&mo>, <&kp>;
