@@ -31,10 +31,10 @@
 
                 code_layer {
                         bindings = <
-                                   &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi_fast PLUS EQUAL   &rpi_fast MINUS UNDER     &rpi_fast SLASH LPAR   &rpi_fast BSLH RPAR      &kp AMPS 
-                                   &rpi LSHIFT N6   &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &rpi_fast SQT DQT      &rpi_fast QMARK AT        &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast RSHIFT EXCL
+                                   &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi_fast PLUS EQUAL   &rpi_fast UNDER MINUS     &rpi_fast SLASH LPAR   &rpi_fast BSLH RPAR      &kp AMPS 
+                                   &rpi LSHIFT N6   &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &rpi_fast QMARK AT     &rpi_fast SQT DQT         &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast RSHIFT EXCL
                                    &trans           &trans         &trans          &trans            &trans                                 &rpi_fast LT HASH      &rpi_fast GT DOLLAR       &rpi_fast PIPE PRCNT   &rpi_fast TILDE GRAVE    &rpi_fast CARET ASTRK
-                                                                                   &trans            &trans                                 &trans            &trans
+                                                                                   &trans            &trans                                 &trans                 &trans
                         >;
                 };
 
