@@ -30,10 +30,10 @@
 
                 code_layer {
                         bindings = <
-                                   &rpi_slow F1 N1   &rpi_slow F2 N2   &rpi_slow F3 N3    &rpi_slow F4 N4               &rpi_slow F5 N5                  &rpi_fast PLUS EQUAL   &rpi_fast UNDER MINUS     &rpi_fast LT LPAR      &rpi_fast GT RPAR        &rpi_fast AMPS AT 
-                                   &rpi_slow F6 N6   &rpi_slow F7 N7   &rpi_slow F8 N8    &rpi_slow F9 N9               &rpi_slow F10 N0                 &rpi_fast QMARK AT     &rpi_fast SQT DQT         &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast QMARK EXCL
-                                   &kp F11           &kp F12           &trans             &rpi C_BRI_DN C_VOLUME_DOWN   &rpi C_BRI_UP C_VOLUME_UP        &rpi_fast SLASH HASH   &rpi_fast BSLH DOLLAR     &rpi_fast PIPE PRCNT   &rpi_fast TILDE GRAVE    &rpi_fast CARET ASTRK
-                                                                                          &trans                        &trans                           &trans                 &trans
+                                   &rpi_slow F1 N1   &rpi_slow F2 N2   &rpi_slow F3 N3    &rpi_slow F4 N4                   &rpi_slow F5 N5                                          &rpi_fast PLUS EQUAL   &rpi_fast UNDER MINUS     &rpi_fast LT LPAR      &rpi_fast GT RPAR        &rpi_fast AMPS AT 
+                                   &rpi_slow F6 N6   &rpi_slow F7 N7   &rpi_slow F8 N8    &rpi_slow F9 N9                   &rpi_slow F10 N0                                         &rpi_fast QMARK AT     &rpi_fast SQT DQT         &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast QMARK EXCL
+                                   &kp F11           &kp F12           &trans             &rpi_fast C_BRI_DN C_VOLUME_DOWN  &rpi_fast C_BRI_UP C_VOLUME_UP                           &rpi_fast SLASH HASH   &rpi_fast BSLH DOLLAR     &rpi_fast PIPE PRCNT   &rpi_fast TILDE GRAVE    &rpi_fast CARET ASTRK
+                                                                                          &trans                            &trans                                                   &trans                 &trans
                         >;
                 };
 
