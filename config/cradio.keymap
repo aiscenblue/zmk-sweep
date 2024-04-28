@@ -32,7 +32,7 @@
                 code_layer {
                         bindings = <
                                    &kp N1           &kp N2         &kp N3          &kp N4            &kp N5                                 &rpi_fast PLUS EQUAL   &rpi_fast UNDER MINUS     &rpi_fast LT LPAR      &rpi_fast GT RPAR        &rpi_fast AMPS AT 
-                                   &rpi LSHIFT N6   &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &rpi_fast AT QMARK     &rpi_fast SQT DQT         &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast RSHIFT EXCL
+                                   &rpi LSHIFT N6   &rpi LCTRL N7  &rpi LALT N8    &rpi LSHIFT N9    &rpi LCMD N0                           &rpi_fast QMARK AT     &rpi_fast SQT DQT         &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast QMARK EXCL
                                    &trans           &trans         &trans          &trans            &trans                                 &rpi_fast SLASH HASH   &rpi_fast BSLH DOLLAR     &rpi_fast PIPE PRCNT   &rpi_fast TILDE GRAVE    &rpi_fast CARET ASTRK
                                                                                    &trans            &trans                                 &trans                 &trans
                         >;
