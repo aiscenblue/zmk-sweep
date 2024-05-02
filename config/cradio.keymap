@@ -35,7 +35,7 @@
                                 &rpi_lyr REVERSE Y       &kp U                      &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P                          &rpi ESCAPE Q       &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_lyr REVERSE T
                                 &rpi RCMD H              &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI                       &rpi LSHIFT A       &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 
                                 &rpi_slow DEL BSPC       &rpi RET N                 &rpi C_BRI_DN M    &rpi C_BRI_UP COMMA  &kp DOT                                &kp Z               &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                                   
-                                                                                                       &rpi_lyr CODE SPACE  &rpi RCMD TAB                          &rpi LCMD TAB       &rpi_lyr CODE RET      
+                                                                                                       &rpi_lyr CODE SPACE  &rpi RCMD TAB                          &rpi_lyr CODE RET   &rpi LCMD TAB             
                         >;
                 };
 
