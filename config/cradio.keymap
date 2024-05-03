@@ -23,9 +23,9 @@
 
                 default_layer {
                         bindings = <
-                                &rpi ESCAPE Q          &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &tog_mod_kp DOTA_BASE T                     &kp Y                    &kp U                      &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
-                                &rpi LSHIFT A          &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J              &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
-                                &tog_mod_kp REVERSE Z  &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                             &rpi_slow DEL BSPC       &rpi RET N                 &rpi C_BRI_DN M    &rpi C_BRI_UP COMMA  &tog_mod_kp REVERSE DOT      
+                                &rpi ESCAPE Q          &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &tog_mod_kp DOTA_BASE T                     &rpi C_BRI_DN Y          &rpi C_BRI_UP U           &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
+                                &rpi LSHIFT A          &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
+                                &tog_mod_kp REVERSE Z  &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                             &rpi_slow DEL BSPC       &rpi RET N                &kp M              &kp COMMA            &tog_mod_kp REVERSE DOT      
                                                                                                 &rpi LCMD TAB             &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi RCMD TAB
                         >;
                 };
@@ -50,10 +50,10 @@
 
                 mods_layer {
                         bindings = <
-                                   &trans          &trans            &trans            &trans          &trans                        &trans           &kp C_VOLUME_DOWN          &rpi_slow PAGE_UP UP        &kp C_VOLUME_UP         &trans 
-                                   &trans          &trans            &trans            &trans          &trans                        &trans           &rpi_slow HOME LEFT        &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT     &trans
-                                   &trans          &trans            &trans            &trans          &trans                        &kp DEL          &trans                     &trans                      &trans                  &trans
-                                                                                       &trans          &trans                        &kp RET          &mo CONFIG
+                                   &trans          &trans            &trans            &trans          &trans                        &kp C_VOLUME_DOWN   &kp C_VOLUME_UP            &rpi_slow PAGE_UP UP        &trans                  &trans 
+                                   &trans          &trans            &trans            &trans          &trans                        &trans              &rpi_slow HOME LEFT        &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT     &trans
+                                   &trans          &trans            &trans            &trans          &trans                        &kp DEL             &trans                     &trans                      &trans                  &trans
+                                                                                       &trans          &trans                        &kp RET             &mo CONFIG
                         >;
                 };
 
