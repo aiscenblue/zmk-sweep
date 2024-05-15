@@ -40,10 +40,10 @@
 
                 mods_layer {
                         bindings = <
-                                   &trans          &trans            &trans            &trans          &trans                        &kp C_VOLUME_DOWN   &kp C_VOLUME_UP            &rpi_slow PAGE_UP UP        &trans                  &trans 
-                                   &trans          &trans            &trans            &trans          &trans                        &trans              &rpi_slow HOME LEFT        &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT     &trans
-                                   &trans          &trans            &trans            &trans          &trans                        &kp DEL             &trans                     &trans                      &trans                  &trans
-                                                                                       &trans          &trans                        &kp RET             &mo CONFIG
+                                   &trans          &trans                    &rpi_slow PAGE_UP UP        &rpi_slow C_BRI_UP C_VOLUME_UP    &rpi_slow C_BRI_DN C_VOLUME_DOWN      &rpi_slow C_BRI_DN C_VOLUME_DOWN   &rpi_slow C_BRI_UP  C_VOLUME_UP    &rpi_slow PAGE_UP UP        &trans                  &trans 
+                                   &trans          &rpi_slow HOME LEFT       &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT               &trans                                &trans                             &rpi_slow HOME LEFT                &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT     &trans
+                                   &trans          &trans                    &trans                      &trans                            &kp DEL                               &kp DEL                            &trans                             &trans                      &trans                  &trans
+                                                                                                         &mo CONFIG                        &kp RET                               &kp RET                            &mo CONFIG
                         >;
                 };
 
