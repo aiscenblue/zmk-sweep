@@ -22,7 +22,7 @@
 
                 default_layer {
                         bindings = <
-                                &rpi ESCAPE Q          &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &tog_mod_kp DOTA_BASE T                     &rpi C_BRI_DN Y          &rpi C_BRI_UP U           &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
+                                &rpi ESCAPE Q          &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &tog_mod_kp DOTA_BASE T                     &tog_mod_kp DOTA_BASE Y  &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
                                 &rpi LSHIFT A          &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
                                 &kp Z                  &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                             &rpi_slow DEL BSPC       &rpi RET N                &kp M              &kp COMMA            &kp DOT      
                                                                                                 &rpi LCMD TAB             &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi RCMD TAB
