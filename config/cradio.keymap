@@ -22,7 +22,7 @@
                         bindings = <
                                 &rpi ESCAPE Q     &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_fast TAB T                             &kp Y                    &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
                                 &kp A             &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
-                                &rpi soft_off Z   &kp X                 &rpi CAPSLOCK C    &kp V                     &kp B                                       &rpi_slow DEL BSPC       &kp N                &kp M              &kp COMMA            &kp DOT      
+                                &kp Z             &kp X                 &rpi CAPSLOCK C    &kp V                     &kp B                                       &rpi_slow DEL BSPC       &kp N                &kp M              &kp COMMA            &kp DOT      
                                                                                                 &rpi_p LCMD TAB           &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi_p RCMD BSPC
                         >;
                 };
@@ -40,8 +40,8 @@
                         bindings = <
                                    &trans          &trans                    &rpi_slow PAGE_UP UP        &rpi_slow C_BRI_DN C_VOLUME_DOWN  &rpi_slow C_BRI_UP C_VOLUME_UP        &rpi_slow C_BRI_DN C_VOLUME_DOWN   &rpi_slow C_BRI_UP  C_VOLUME_UP    &rpi_slow PAGE_UP UP        &trans                  &trans 
                                    &trans          &rpi_slow HOME LEFT       &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT               &trans                                &trans                             &rpi_slow HOME LEFT                &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT     &trans
-                                   &trans          &trans                    &trans                      &trans                            &kp DEL                               &kp DEL                            &trans                             &trans                      &trans                  &trans
-                                                                                                         &mo CONFIG                        &kp RET                               &kp RET                            &mo CONFIG
+                                   &soft_off       &trans                    &trans                      &trans                            &kp DEL                               &kp DEL                            &trans                             &trans                      &trans                  &trans
+                                                                                                         &kp TAB                           &kp RET                               &kp RET                            &kp TAB
                         >;
                 };
 
