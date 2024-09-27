@@ -66,8 +66,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>; 
+                    quick-tap-ms = <120>;
+                    require-prior-idle-ms = <120>;
                     bindings = <&kp>, <&kp>;
                 };
 
