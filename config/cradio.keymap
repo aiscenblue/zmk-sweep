@@ -55,31 +55,12 @@
                 };
         };
 
-        keys {
-                compatible = "gpio-keys";
-                soft_off_key: soft_off_key {
-                    gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-                };
-            };
-
-        soft_off_wakers {
-                compatible = "zmk,soft-off-wakeup-sources";
-                wakeup-sources = <&wakeup_source>;
-            };
-
         behaviors {
                 soft_off: soft_off {
                     compatible = "zmk,behavior-soft-off";
                     #binding-cells = <0>;
                     hold-time-ms = <3000>;
                 };
-
-                 awake_src: awake_src {
-                        compatible = "zmk,gpio-key-wakeup-trigger";
-                
-                        trigger = <&on_off_key>;
-                        wakeup-source;
-                    };
 
                 rpi_p: rpi_p {
                     compatible = "zmk,behavior-hold-tap";
