@@ -62,6 +62,13 @@
                     hold-time-ms = <3000>;
                 };
 
+                wakeup_source: wakeup_source {
+                        compatible = "zmk,gpio-key-wakeup-trigger";
+                
+                        trigger = <&on_off_key>;
+                        wakeup-source;
+                    };
+
                 rpi_p: rpi_p {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
