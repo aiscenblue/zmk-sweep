@@ -22,7 +22,7 @@
                         bindings = <
                                 &rpi ESCAPE Q          &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_fast TAB T                             &kp Y                    &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
                                 &kp A                  &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
-                                &kp Z                  &kp X                 &rpi CAPSLOCK C    &kp V                     &kp B                                       &rpi_slow DEL BSPC       &kp N                &kp M              &kp COMMA            &kp DOT      
+                                &rpi_slow soft_off Z   &rpi awake_src X      &rpi CAPSLOCK C    &kp V                     &kp B                                       &rpi_slow DEL BSPC       &kp N                &kp M              &kp COMMA            &kp DOT      
                                                                                                 &rpi_p LCMD TAB           &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi_p RCMD BSPC
                         >;
                 };
@@ -56,6 +56,19 @@
         };
 
         behaviors {
+                soft_off: soft_off {
+                    compatible = "zmk,behavior-soft-off";
+                    #binding-cells = <0>;
+                    hold-time-ms = <5000>;
+                };
+
+                 awake_src: awake_src {
+                        compatible = "zmk,gpio-key-wakeup-trigger";
+                
+                        trigger = <&on_off_key>;
+                        wakeup-source;
+                    };
+
                 rpi_p: rpi_p {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
