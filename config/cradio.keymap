@@ -20,7 +20,7 @@
 
                 default_layer {
                         bindings = <
-                                &rpi ESCAPE Q          &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_fast TAB T                     &tog_mod_kp DOTA_BASE Y  &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
+                                &rpi ESCAPE Q          &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_fast TAB T                             &kp Y                    &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
                                 &rpi_fast TAB A        &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
                                 &kp Z                  &kp X                 &kp C              &kp V                     &rpi CAPSLOCK B                             &rpi_slow DEL BSPC       &rpi RET N                &kp M              &kp COMMA            &kp DOT      
                                                                                                 &rpi LCMD TAB             &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi RCMD TAB
@@ -51,24 +51,6 @@
                                    &trans          &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans         &trans
                                    &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4                         &bt BT_SEL 4    &bt BT_SEL 3      &bt BT_SEL 2      &bt BT_SEL 1   &bt BT_SEL 0
                                                                                        &bt BT_PRV      &bt BT_NXT                           &bt BT_NXT      &bt BT_PRV
-                        >;
-                };
-
-                dota_base_layer {
-                        bindings = <
-                                   &kp Q         &kp W          &kp E         &kp R            &rpi Y T                            &trans          &trans       &kp PAGE_UP        &trans          &mo DOTA_BASE 
-                                   &kp A         &rpi LCTRL S   &rpi LALT D   &rpi LSHIFT F    &kp G                               &trans          &kp HOME     &kp PAGE_DOWN      &kp END         &trans
-                                   &kp Z         &kp X          &kp C         &kp V            &kp B                               &trans          &trans       &trans             &trans          &trans
-                                                                              &mo DOTA_SHIFT   &kp LALT                            &trans          &trans
-                        >;
-                };
-
-                dota_shift_layer {
-                        bindings = <
-                                   &kp N1        &kp N2         &kp N3          &kp N4            &kp N5                             &trans       &trans       &trans        &trans      &trans  
-                                   &kp N6        &kp N7         &kp N8          &kp N9            &kp N0                             &trans       &trans       &trans        &trans      &trans
-                                   &kp F1        &kp F2         &kp F3          &kp F4            &kp F5                             &trans       &trans       &trans        &trans      &trans
-                                                                                &trans            &trans                             &trans       &trans
                         >;
                 };
         };
