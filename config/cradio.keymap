@@ -48,7 +48,7 @@
                 config_layer {
                         bindings = <
                                    &soft_off               &trans            &trans            &trans          &bt BT_CLR                           &bt BT_CLR      &trans            &trans            &trans         &trans 
-                                   &soft_off_wakers        &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans         &trans
+                                   &kscan0                 &trans            &trans            &trans          &trans                               &trans          &trans            &trans            &trans         &trans
                                    &bt BT_SEL 0            &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4                         &bt BT_SEL 4    &bt BT_SEL 3      &bt BT_SEL 2      &bt BT_SEL 1   &bt BT_SEL 0
                                                                                                &bt BT_PRV      &bt BT_NXT                           &bt BT_NXT      &bt BT_PRV
                         >;
@@ -56,10 +56,19 @@
         };
 
         behaviors {
-                soft_off_wakers {
-                    compatible = "zmk,soft-off-wakeup-sources";
-                    wakeup-sources = <&wakeup_scan>;
-                };
+                kscan0: kscan {
+                        compatible = "zmk,kscan-gpio-matrix";
+                        wakeup-source;
+                        diode-direction = "col2row";
+                        col-gpios
+                            = <&pro_micro 4 GPIO_ACTIVE_HIGH>
+                            , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+                            ;
+                        row-gpios
+                            = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                            ;
+                    };
                 rpi_p: rpi_p {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
