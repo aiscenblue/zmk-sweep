@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+// #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #define DEFAULT        0
 #define CODE           1
@@ -61,8 +61,8 @@
 
                 mouse_layer {
                         bindings = <
-                                   &trans    &trans              &mmv MOUSE_UP       &trans              &trans                         &trans       &trans              &mmv MOVE_UP        &trans            &trans 
-                                   &trans    &mmv MOUSE_LEFT     &mmv MOUSE_DOWN     &mmv MOUSE_RIGHT    &trans                         &trans       &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT   &trans
+                                   &trans    &trans              &mmv MOVE_UP       &trans              &trans                         &trans       &trans              &mmv MOVE_UP        &trans            &trans 
+                                   &trans    &mmv MOUSE_LEFT     &mmv MOVE_DOWN     &mmv MOVE_RIGHT    &trans                         &trans       &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT   &trans
                                    &trans    &trans              &trans              &trans              &trans                         &trans       &trans              &trans              &trans            &trans
                                                                                      &mkp RCLK           &mkp LCLK                      &mkp LCLK    &RCLK
                         >;
