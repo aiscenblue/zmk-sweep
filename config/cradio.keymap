@@ -17,7 +17,7 @@
 #define CODE           1
 #define MODS           2
 #define CONFIG         3
-#define MOUSE          4
+#define MOUS           4
 
 / {
         keymap {
@@ -25,7 +25,7 @@
 
                 default_layer {
                         bindings = <
-                                &rpi_fast ESCAPE Q   &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_lyr MOUSE T                            &rpi_lyr MOUSE Y                    &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
+                                &rpi_fast ESCAPE Q   &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_lyr MOUS T                             &rpi_lyr MOUSE Y                    &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
                                 &kp A                &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
                                 &kp Z                &kp X                 &rpi CAPSLOCK C    &kp V                     &kp B                                       &rpi_slow DEL BSPC       &kp N                     &kp M              &kp COMMA            &kp DOT      
                                                                                               &rpi_p LCMD TAB           &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi_p RCMD BSPC
@@ -43,7 +43,7 @@
 
                 mods_layer {
                         bindings = <
-                                   &trans          &trans                    &rpi_slow PAGE_UP UP        &rpi_slow C_BRI_DN C_VOLUME_DOWN  &rpi_slow C_BRI_UP C_VOLUME_UP        &rpi_slow C_BRI_DN C_VOLUME_DOWN   &rpi_slow C_BRI_UP  C_VOLUME_UP    &rpi_slow PAGE_UP UP        &trans                  &trans 
+                                   &trans          &mo MOUS                  &rpi_slow PAGE_UP UP        &rpi_slow C_BRI_DN C_VOLUME_DOWN  &rpi_slow C_BRI_UP C_VOLUME_UP        &rpi_slow C_BRI_DN C_VOLUME_DOWN   &rpi_slow C_BRI_UP  C_VOLUME_UP    &rpi_slow PAGE_UP UP        &trans                  &trans 
                                    &trans          &rpi_slow HOME LEFT       &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT               &trans                                &trans                             &rpi_slow HOME LEFT                &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT     &trans
                                    &trans          &trans                    &trans                      &trans                            &kp DEL                               &kp DEL                            &trans                             &trans                      &trans                  &trans
                                                                                                          &kp TAB                           &kp RET                               &kp RET                            &kp TAB
@@ -61,10 +61,10 @@
 
                 mouse_layer {
                         bindings = <
-                                   &trans    &trans              &mmv MOVE_UP       &trans              &trans                         &trans       &trans              &mmv MOVE_UP        &trans            &trans 
-                                   &trans    &mmv MOVE_LEFT      &mmv MOVE_DOWN     &mmv MOVE_RIGHT     &trans                         &trans       &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT   &trans
-                                   &trans    &trans              &trans             &trans              &trans                         &trans       &trans              &trans              &trans            &trans
-                                                                                    &mkp RCLK           &mkp LCLK                      &mkp LCLK    &mkp RCLK
+                                   &trans    &trans              &mmv MOVE_UP       &trans              &trans                         &msc SCRL_UP         &msc SCRL_LEFT      &mmv MOVE_UP        &msc SCRL_RIGHT   &trans 
+                                   &trans    &mmv MOVE_LEFT      &mmv MOVE_DOWN     &mmv MOVE_RIGHT     &trans                         &msc SCRL_DOWN       &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT   &trans
+                                   &trans    &trans              &trans             &trans              &trans                         &trans               &trans              &trans              &trans            &trans
+                                                                                    &mkp RCLK           &mkp LCLK                      &mkp LCLK            &mkp RCLK
                         >;
                 };
         };
