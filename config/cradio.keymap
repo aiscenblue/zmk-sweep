@@ -25,10 +25,10 @@
 
                 default_layer {
                         bindings = <
-                                &rpi_fast ESCAPE Q   &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_lyr MOUS T                             &rpi_lyr MOUS Y                    &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
+                                &rpi_fast ESCAPE Q   &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_lyr MOUS T                             &rpi_lyr MOUS Y          &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
                                 &kp A                &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
                                 &kp Z                &kp X                 &rpi CAPSLOCK C    &kp V                     &kp B                                       &rpi_slow DEL BSPC       &kp N                     &kp M              &kp COMMA            &kp DOT      
-                                                                                              &rpi_p LCMD TAB           &rpi_lyr CODE RET                           &rpi_lyr CODE SPACE      &rpi_p RCMD BSPC
+                                                                                              &rpi_p MOUS TAB           &rpi_lyr CODE SPACE                         &rpi_lyr CODE SPACE      &rpi_p MOUS BSPC
                         >;
                 };
 
@@ -61,10 +61,10 @@
 
                 mouse_layer {
                         bindings = <
-                                   &trans    &msc SCRL_LEFT      &mmv MOVE_UP       &msc SCRL_RIGHT     &msc SCRL_UP                   &msc SCRL_UP         &msc SCRL_RIGHT     &mmv MOVE_UP        &msc SCRL_LEFT    &trans 
-                                   &trans    &mmv MOVE_LEFT      &mmv MOVE_DOWN     &mmv MOVE_RIGHT     &msc SCRL_DOWN                 &msc SCRL_DOWN       &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT   &trans
-                                   &trans    &trans              &trans             &trans              &trans                         &trans               &trans              &trans              &trans            &trans
-                                                                                    &mkp RCLK           &mkp LCLK                      &mkp LCLK            &mkp RCLK
+                                   &trans    &mkp LCLK           &mmv MOVE_UP       &mkp RCLK           &trans                       &trans             &mkp LCLK           &mmv MOVE_UP        &mkp RCLK         &trans 
+                                   &trans    &mmv MOVE_LEFT      &mmv MOVE_DOWN     &mmv MOVE_RIGHT     &msc SCRL_UP                 &msc SCRL_UP       &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT   &trans
+                                   &trans    &trans              &trans             &trans              &msc SCRL_DOWN               &msc SCRL_DOWN     &msc SCRL_LEFT      &msc SCRL_RIGHT     &trans            &trans
+                                                                                    &mkp RCLK           &mkp LCLK                    &mkp LCLK          &mkp RCLK
                         >;
                 };
         };
