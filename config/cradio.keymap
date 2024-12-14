@@ -26,7 +26,7 @@
                 default_layer {
                         bindings = <
                                 &rpi_fast ESCAPE Q   &rpi_lyr CODE W       &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R    &rpi_lyr MOUS T                             &rpi_lyr MOUS Y          &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O      &rpi ESCAPE P      
-                                &kp A                &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RSHIFT SEMI
+                                &rpi LCMD A          &rpi LCTRL S          &rpi LALT D        &rpi LSHIFT F             &rpi LCMD G                                 &rpi RCMD H              &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L         &rpi RCMD SEMI
                                 &kp Z                &kp X                 &rpi CAPSLOCK C    &kp V                     &kp B                                       &rpi_slow DEL BSPC       &kp N                     &kp M              &kp COMMA            &kp DOT      
                                                                                               &rpi_lyr MOUS BSPC        &rpi_lyr CODE SPACE                         &rpi_lyr CODE SPACE      &rpi_lyr MOUS BSPC
                         >;
